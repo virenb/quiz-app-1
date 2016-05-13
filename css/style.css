@@ -1,3 +1,4 @@
+/*background-image*/
 body {
 	background-image: url('../images/background-image.jpeg');
 	background-size: cover;
@@ -6,8 +7,55 @@ body {
 	background-position: center;
 }
 
+/*header*/
 .intro h1 {
 	text-align: center;
 	color: #4015cb;
 }
 
+/*score*/
+.score-questions-left {
+	list-style: none;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 2.5em;
+	line-height: 2em;
+}
+
+/*quiz*/
+.main-quiz h3, p {
+	text-align: center;
+}
+
+.options {
+	padding-left: 49em;
+	line-height: 2em;
+	list-style: none;
+}
+
+/*radio buttons*/
+
+/*submit button*/
+button {
+	margin-left: 53em;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*feedback*/
+.feedback {
+	text-align: center;
+}
+
+/*trivia info*/
+.trivia-info {
+	margin: 2em 30em;
+	border: 1px solid black;
+}
