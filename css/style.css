@@ -96,6 +96,7 @@ input[type="radio"] {
 	border-style: none;
 	border-radius: 10px;
 	padding: .5rem 1rem;
+	font-family: "Merriweather", helvetica;
 }
 
 .next-question-button > button:hover {
