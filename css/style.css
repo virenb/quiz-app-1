@@ -78,7 +78,7 @@ input[type="radio"] {
 	color: #ffee2b;
 }
 
-a {
+.submit-button a {
 	text-decoration: none;
 	color: #f2df00;
 }
@@ -105,37 +105,41 @@ a {
 	color: #ffee2b;
 }
 
-a {
+.next-question-button a {
 	text-decoration: none;
 	color: #f2df00;
 }
 
 /*play again button*/
-.play-again-button {
+.play-again {
 	text-align: center;
-	font-family: "Merriweather", helvetica;
+	z-index: 999;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	position: fixed;
 }
 
-.play-again-button > button {
+.play-again > button {
 	font-size: 2em;
-	background-color: #4015cb;
-	border-color: #4015cb;;
+	background-color: #ff3d00;
+	border-color: #bf360c;;
 	text-shadow: none;
 	border-style: none;
 	border-radius: 10px;
 	padding: .5rem 1rem;
+	font-family: "Merriweather", helvetica;
 }
 
-.play-again-button > button:hover {
+.play-again > button:hover {
 	cursor: pointer;
-	background-color: #250686;
-	border-color: #ffee2b;
-	color: #ffee2b;
+	background-color: #ff5722;
+	border-color: #bf360c;
 }
 
-a {
+.play-again a {
 	text-decoration: none;
-	color: #f2df00;
+	color: #fff;
 }
 
 /*feedback*/
