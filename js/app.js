@@ -1,3 +1,12 @@
+var quizQuestions = $('.options');
+var questionsLeft = $('.questions-left');
+var playerScore = $('#count');
+var questionNumber = $('#id');
+var ending = $('.end-page');
+var playerFeedback = $('.feedback');
+var answer = $('.correct-answer');
+var triviaInfo = $('.trivia-info');
+
 $(document).ready(function() {
 	//hide the feedback part until they click the submit button
 	//enable submit button to work
