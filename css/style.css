@@ -58,9 +58,10 @@ input[type="radio"] {
 /*submit button*/
 .submit-button {
 	text-align: center;
+	font-family: "Merriweather", helvetica;
 }
 
-button {
+.submit-button > button {
 	font-size: 2em;
 	background-color: #4015cb;
 	border-color: #4015cb;;
@@ -70,7 +71,62 @@ button {
 	padding: .5rem 1rem;
 }
 
-button:hover {
+.submit-button > button:hover {
+	cursor: pointer;
+	background-color: #250686;
+	border-color: #ffee2b;
+	color: #ffee2b;
+}
+
+a {
+	text-decoration: none;
+	color: #f2df00;
+}
+
+/*next question button*/
+.next-question-button {
+	text-align: center;
+}
+
+.next-question-button > button {
+	font-size: 2em;
+	background-color: #4015cb;
+	border-color: #4015cb;;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 10px;
+	padding: .5rem 1rem;
+}
+
+.next-question-button > button:hover {
+	cursor: pointer;
+	background-color: #250686;
+	border-color: #ffee2b;
+	color: #ffee2b;
+}
+
+a {
+	text-decoration: none;
+	color: #f2df00;
+}
+
+/*play again button*/
+.play-again-button {
+	text-align: center;
+	font-family: "Merriweather", helvetica;
+}
+
+.play-again-button > button {
+	font-size: 2em;
+	background-color: #4015cb;
+	border-color: #4015cb;;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 10px;
+	padding: .5rem 1rem;
+}
+
+.play-again-button > button:hover {
 	cursor: pointer;
 	background-color: #250686;
 	border-color: #ffee2b;

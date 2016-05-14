@@ -11,11 +11,16 @@
 <body>
 	<header class="intro">
 		<h1>Historical Trivia Quiz</h1>
+		<nav>
+			<ul class="play-again">
+				<li><a class='new-game' href="#">Play Again</a></li>
+			</ul>
+		</nav>
 	</header>
 	<section class="main-quiz">
 		<ul class="score-questions-left">
 			<li class='questions-left'><span>5</span> Questions Left</li>
-			<li class='score'>Player's Score <span>0</span></li>
+			<li class='score'>Player's Score <span>0</span>/5</li>
 		</ul>
 		<h3 class='question-number'>Question #<span id="count">1</span></h3>
 		<h3 class='question'>Which Seven Wonders of the Ancient World was built first?</h3>
@@ -33,6 +38,9 @@
 	</div>
 	<section class="feedback">
 		<h3>You got it right!!!</h3>
+		<div class='next-question-button'>
+			<button><a href="#">Next Question</a></button>
+		</div>
 		<h4>The correct answer is: <br><strong>Hanging Gardens of Babylon</strong></br></h4>
 	</section>
 	<section class='trivia-info'>
