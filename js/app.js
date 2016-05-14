@@ -6,7 +6,10 @@ $(document).ready(function() {
 			//if correct answer, show "You got it right!!!"
 			//if wrong answer, show "Wrong!!!" and "The correct answer is..."
 			//show the trivia information at the bottom for both correct and wrong scenario
-	//once user answers the question, enable the next question button
+	//once user answers the question, show the next question button
 		//once the user clicks the next question button, make "questions left" go down one number
 		//the player score should go up one number +1
+		//show next question
+	//once user answers all the question show the play again button
+		//hide everything else on the page
 });
