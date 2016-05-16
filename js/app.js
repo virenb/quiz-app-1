@@ -5,30 +5,30 @@ var quiz = [{
     correct: 0,
     answer: "Hanging Gardens of Babylon",
     trivia: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
-    // }, {
-    //     question: "Who was the first emperor of China?",
-    //     choices: ["Hanging Gardens of Babylon", "Great Pyramid of Giza", "Rhodes", "Colossus of Rhodes", "Lighthouse of Alexandria"],
-    //     correct: 1,
-    //     answer: "Great Pyramid of Giza",
-    //     trivia: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
-    // }, {
-    //     question: "Where was the first law made in?",
-    //     choices: ["Hanging Gardens of Babylon", "Great Pyramid of Giza", "Rhodes", "Colossus of Rhodes", "Lighthouse of Alexandria"],
-    //     correct: 2,
-    //     answer: "Rhodes",
-    //     trivia: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
-    // }, {
-    //     question: "Who won the war of whatever?",
-    //     choices: ["Hanging Gardens of Babylon", "Great Pyramid of Giza", "Rhodes", "Colossus of Rhodes", "Lighthouse of Alexandria"],
-    //     correct: 3,
-    //     answer: "Colossus of Rhodes",
-    //     trivia: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
-    // }, {
-    //     question: "Which nation arose due to the Cold War?",
-    //     choices: ["Hanging Gardens of Babylon", "Great Pyramid of Giza", "Rhodes", "Colossus of Rhodes", "Lighthouse of Alexandria"],
-    //     correct: 4,
-    //     answer: "Lighthouse of Alexandria",
-    //     trivia: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+}, {
+    question: "Who was the first emperor of China?",
+    choices: ["Hanging Gardens of Babylon", "Great Pyramid of Giza", "Rhodes", "Colossus of Rhodes", "Lighthouse of Alexandria"],
+    correct: 1,
+    answer: "Great Pyramid of Giza",
+    trivia: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+}, {
+    question: "Where was the first law made in?",
+    choices: ["Hanging Gardens of Babylon", "Great Pyramid of Giza", "Rhodes", "Colossus of Rhodes", "Lighthouse of Alexandria"],
+    correct: 2,
+    answer: "Rhodes",
+    trivia: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+}, {
+    question: "Who won the war of whatever?",
+    choices: ["Hanging Gardens of Babylon", "Great Pyramid of Giza", "Rhodes", "Colossus of Rhodes", "Lighthouse of Alexandria"],
+    correct: 3,
+    answer: "Colossus of Rhodes",
+    trivia: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+}, {
+    question: "Which nation arose due to the Cold War?",
+    choices: ["Hanging Gardens of Babylon", "Great Pyramid of Giza", "Rhodes", "Colossus of Rhodes", "Lighthouse of Alexandria"],
+    correct: 4,
+    answer: "Lighthouse of Alexandria",
+    trivia: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
 }];
 
 //global variables
@@ -50,9 +50,15 @@ $(document).ready(function() {
         if (currentQuestion == quiz.length) {
             $('.submit-button').hide();
             var ending = "<h3>" + 'Good job on finishing this quiz!' + "</h3>";
-            var endButton = "<div class='play-again'><button class='play-again-button'><a href='#''>" + 'Play Again' + "</a></button></div>";
+            ending += "<div class='play-again'><button class='play-again-button'><a href='#'>" + 'Play Again' + "</a></button></div>";
             $('.end-page').append(ending);
-            $('.play-again').append(endButton);
+            //once play again button is clicked, start the game all over again
+            $('.play-again-button').click(function() {
+                $('.end-page').empty();
+                currentQuestion = 0;
+                loadQuestion();
+                $('.submit-button').show();
+            })
         } else {
             newQuestion = "<h3>" + quiz[currentQuestion].question + "</h3>";
             for (var a = 0; a < quiz[currentQuestion].choices.length; a++) {
@@ -85,5 +91,4 @@ $(document).ready(function() {
         triviaInfo.hide();
         loadQuestion();
     })
-    
 });
