@@ -31,35 +31,35 @@ var ending = $('.end-page');
 var nextQuestion = $('.next-question-button');
 var triviaInfo = $('.trivia-info');
 
-// var LoadQuiz = function(question, choices, correct, trivia) {
-//     this.question = question;
-//     this.choices = choices;
-//     this.correct = correct;
-//     this.trivia = trivia;
-// };
-
-// var playAnswer = $('input["radio"]');
+var playerAnswer;
+var correctAnswer;
+var wrongAnswer;
 
 $(document).ready(function() {
     //hide everything but the question part until they click the submit button
     ending.hide();
     nextQuestion.hide();
     triviaInfo.hide();
+
     //function for accessing the objects and properties in the quizQuestions array
 
     // LoadQuiz.prototype.start = function() {}
     // for (var i = 0; i < quiz.length; i++) {}
-        var newQuestion = "<h3>" + quiz[0].question + "</h3>";
-        for (var a = 0; a < quiz[0].choices.length; a++) {
-            newQuestion += "<input value='" + a + "' type='radio' name='selector" + 0 + "' class='radio-buttons'>" + quiz[0].choices[a] + "</br>";
-
-        }
-        $('.main-quiz').append(newQuestion);
+    var newQuestion = "<h3>" + quiz[0].question + "</h3>";
+    for (var a = 0; a < quiz[0].choices.length; a++) {
+        newQuestion += "<input value='" + a + "' type='radio' name='selector" + 0 + "' class='radio-buttons'>" + quiz[0].choices[a] + "</br>";
+    }
+    $('.main-quiz').append(newQuestion);
     //show question when submit button is clicked
     $('.submit-button').click(function() {
-        // if () {
-
-        // } 
+        playerAnswer = $('input:checked').val();
+        if (playerAnswer == quiz[0].correct) {
+            correctAnswer = $('.feedback').append("<h3>You got it right!!!</h3>");
+        }
+        else {
+            wrongAnswer = $('.feedback').append("<h3>Sorry, you got it wrong.</h3>");
+        }
+        nextQuestion.show();
     })
 
-});;
+});
