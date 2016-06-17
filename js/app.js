@@ -62,6 +62,7 @@ $(document).ready(function() {
             })
         } else {
             newQuestion = "<h3>" + quiz[currentQuestion].question + "</h3>";
+            $('.submit-button').show();
             for (var a = 0; a < quiz[currentQuestion].choices.length; a++) {
                 newQuestion += "<div class='options'><input value='" + a + "' type='radio' name='selector" + currentQuestion + "' class='radio-buttons'>" + quiz[currentQuestion].choices[a] + "</div>";
             }
@@ -74,11 +75,13 @@ $(document).ready(function() {
         playerAnswer = $('input:checked').val();
         if (playerAnswer == quiz[currentQuestion].correct) {
             correctAnswer = $('.feedback').append("<h3>You got it right!!!</h3>");
+            $('.submit-button').hide();
             currentScore++;
             $('#currentScore').text(currentScore);
         } 
         else {
             wrongAnswer = $('.feedback').append("<h3>Sorry, you got it wrong.</h3>");
+            $('.submit-button').hide();
         }
         $('.feedback').append("<h4>The correct answer is:</br><strong>" + quiz[currentQuestion].answer + "</strong></h4>");
         triviaInfo.show();
